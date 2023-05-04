@@ -1,3 +1,3 @@
 Demo: https://codepen.io/jwktje/pen/JjBaJBv
 
-![Demo](Demo.PNG)
+![Demo](Demo.png)
