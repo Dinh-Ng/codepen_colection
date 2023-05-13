@@ -1,0 +1,57 @@
+body
+  min-height: 100vh
+  display: flex
+  justify-content: center
+  align-items: center
+  background: #26282D
+
+*
+  box-sizing: border-box
+
+#lib
+  position: fixed
+  visibility: hidden
+
+.lib
+  padding: 8px
+  border-radius: 8px
+  cursor: pointer
+  //Just for you
+  transform: scale(2)
+  svg
+    display: block
+    path
+      transition: all .3s ease
+      &.onoff
+        opacity: .8
+      &.shine
+        opacity: 0
+      &.lamp
+        opacity: 0
+  &:hover
+    background: rgba(0,0,0,.12)
+
+#lib:checked + .lib svg
+  path:not(.shine,.lamp)
+    stroke: #C1B971
+  path
+    &.onoff
+      animation: updown .4s linear forwards
+    &.shine
+      opacity: 1
+    &.lamp
+      opacity: 1
+
+@keyframes updown
+  0%
+    transform: translateY(0)
+  50%
+    transform: translateY(1px)
+  100%
+    transform: translateY(0)
+
+
+
+
+
+
