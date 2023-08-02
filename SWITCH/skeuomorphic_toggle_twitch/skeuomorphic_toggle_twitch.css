@@ -463,7 +463,8 @@ img {
     white-space: nowrap;
 }
 
-Ask AI to edit or generate... body {
+/* Ask AI to edit or generate...  */
+body {
     display: flex;
     flex-direction: column;
     justify-content: center;
